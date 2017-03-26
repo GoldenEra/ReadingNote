@@ -5,9 +5,10 @@ DBMS分类
     1. MySQL
 
 ## 链接MySQL
-登陆：mysql -uusername -ppassword -hlocalhost -Pport
+登陆：`mysql -uusername -ppassword -hlocalhost -Pport`
 
 几个常用命令：
+```
 show databases;// 显示数据库
 use database;
 
@@ -21,4 +22,5 @@ show status like “T%”;
 show grants;//显示所用户的授权信息
 show warnings；
 show errors;// 显示报错信息
+```
 

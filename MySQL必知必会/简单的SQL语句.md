@@ -14,21 +14,25 @@ order by column1 asc ,column2 desc
 A与a相同嘛？其答案取决于数据库设置
 
 where 支持的条件操作符
+```
 =
 <>
 !=
 <
 <=
 between a and b(a<=x<=b)
+```
 
 重要，**空值检查**，在数据库中，尽量不设置 Null值，设置默认值
 null 表示 no value，他与0和“”不同，是具有特殊含义的
 特殊的 where语句
+```
 select prod_name from products where prod_price is null
+```
 ![](http://7xscq6.com1.z0.glb.clouddn.com/2017-03-26-030440.jpg)
 
 NULL 值是有特殊含义的，在通过过滤选择出不具有特定值的行时，你可能希望返回具有NULL值的行，但是，不行。因为位置具有特殊的含义，
-数据库不知道他们是否匹配，所以在匹配过滤或不匹配过滤时不返回他们；
+数据库不知道他们是否匹配，所以在匹配过滤或不匹配过滤时不返回他们。
 
 
 
